@@ -1,0 +1,20 @@
+PODS:
+  - CollectionKit (2.0.1)
+  - PKHUD (5.1.0)
+
+DEPENDENCIES:
+  - CollectionKit
+  - PKHUD (~> 5.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CollectionKit
+    - PKHUD
+
+SPEC CHECKSUMS:
+  CollectionKit: c891976ede4e800e2102333df310edc06d8430f4
+  PKHUD: 62ea46a1e88c4def1da784878d199bb54c841e3c
+
+PODFILE CHECKSUM: 9e2830120727960077a387aa9a14d30689052603
+
+COCOAPODS: 1.5.3

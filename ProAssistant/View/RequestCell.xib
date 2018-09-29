@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RequestCell" rowHeight="60" id="Hre-U9-35C" customClass="RequestCell" customModule="ProAssistant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hre-U9-35C" id="L9H-vN-zch">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fence is leaning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDJ-3c-EAE">
+                        <rect key="frame" x="16" y="19" width="139.5" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" WORK IN PROGRESS " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIV-S3-DCJ">
+                        <rect key="frame" x="233" y="21" width="126" height="20"/>
+                        <color key="backgroundColor" red="0.47710102799999998" green="0.79888242480000005" blue="0.78370338679999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="OGP-gr-Qni"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Fl-pJ-kjd">
+                        <rect key="frame" x="10" y="60" width="365" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="yXH-A6-4fd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2Fl-pJ-kjd" firstAttribute="leading" secondItem="L9H-vN-zch" secondAttribute="leading" constant="10" id="CZp-cy-NYJ"/>
+                    <constraint firstAttribute="trailing" secondItem="2Fl-pJ-kjd" secondAttribute="trailing" id="DxH-rg-R3e"/>
+                    <constraint firstAttribute="bottom" secondItem="2Fl-pJ-kjd" secondAttribute="bottom" id="GKW-9M-lzu"/>
+                    <constraint firstItem="VIV-S3-DCJ" firstAttribute="centerY" secondItem="L9H-vN-zch" secondAttribute="centerY" id="HXW-NV-4iZ"/>
+                    <constraint firstItem="JDJ-3c-EAE" firstAttribute="leading" secondItem="L9H-vN-zch" secondAttribute="leadingMargin" id="YsW-0r-TvR"/>
+                    <constraint firstItem="JDJ-3c-EAE" firstAttribute="centerY" secondItem="L9H-vN-zch" secondAttribute="centerY" id="leR-Yd-1mH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VIV-S3-DCJ" secondAttribute="trailing" id="xTz-v4-BxJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="status" destination="VIV-S3-DCJ" id="WNh-u2-Kge"/>
+                <outlet property="title" destination="JDJ-3c-EAE" id="rap-rN-RRG"/>
+            </connections>
+            <point key="canvasLocation" x="-130.5" y="200.5"/>
+        </tableViewCell>
+    </objects>
+</document>
